@@ -2,18 +2,18 @@
 #include <stdlib.h>
 #include <time.h>
 #include <limits.h>
-#define i 5 /* Число строк матрицы */
-#define j 10 /* Число столбцов матрицы */
+#define i 5 
+#define j 10 
 
 int main()
 {
    int a[i][j];
-    int b[j]; /* Число минимумов = число стобцов */
+    int b[j]; 
     int n, m;
 
     for(n = 0; n < i; n++)
         for(m = 0; m < j; m++)
-            a[n][m] = rand()%100;
+            a[n][m] = rand()%108;
 
     for(n = 0; n < j; n++){
         int min = INT_MAX;
